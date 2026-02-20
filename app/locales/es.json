@@ -1,0 +1,17 @@
+{
+  "testimonials": {
+    "title": "Lo que dicen nuestros clientes",
+    "reviews": [
+      {
+        "name": "Jinwoo Park",
+        "location": "Seúl, Corea del Sur",
+        "text": "Un lugar imprescindible en la ciudad. ¡El ambiente y la comida son de primera!"
+      },
+      {
+        "name": "Maria Lopez",
+        "location": "Barcelona, España",
+        "text": "Me encantó la variedad del menú. ¡Definitivamente volveré con amigos!"
+      }
+    ]
+  }
+}

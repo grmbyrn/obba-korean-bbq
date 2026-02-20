@@ -49,7 +49,7 @@ const LocationSection = () => (
               Carrer de Nicaragua, 97, Les Corts, 08029 Barcelona, Spain
             </p>
             <a
-              href="https://maps.google.com"
+              href="https://maps.app.goo.gl/kjgWNgckDingfiCg6"
               target="_blank"
               rel="noopener noreferrer"
               className="mt-2 inline-flex items-center gap-1 font-inter text-sm text-primary hover:underline"

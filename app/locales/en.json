@@ -1,0 +1,17 @@
+{
+  "testimonials": {
+    "title": "What Our Customers Say",
+    "reviews": [
+      {
+        "name": "Jinwoo Park",
+        "location": "Seoul, South Korea",
+        "text": "A must-visit spot in town. The ambiance and food are top-notch!"
+      },
+      {
+        "name": "Maria Lopez",
+        "location": "Barcelona, Spain",
+        "text": "Loved the variety on the menu. Will definitely come back with friends!"
+      }
+    ]
+  }
+}

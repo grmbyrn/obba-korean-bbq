@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
+
 const nextConfig: NextConfig = {
-  /* config options here */
+  // No i18n config needed for app/[locale] routing
 };
 
 export default nextConfig;
