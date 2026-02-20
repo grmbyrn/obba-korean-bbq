@@ -41,7 +41,7 @@ export default function MainDishes() {
   return (
     <section className="container mx-auto py-12 px-4">
       <div className="mb-10 text-center">
-        <h2 className="text-4xl font-bold">
+        <h2 className="font-oswald text-4xl md:text-5xl font-bold uppercase tracking-tight text-foreground text-center mb-4">
           Main <span className="text-orange-500">dishes</span>
         </h2>
       </div>

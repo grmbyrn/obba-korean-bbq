@@ -42,11 +42,11 @@ export default function Testimonials() {
 
   return (
     <section className="w-full">
-      <h2 className="text-3xl font-bold mb-8 text-center w-full">
+      <h2 className="font-oswald text-4xl md:text-5xl font-bold uppercase tracking-tight text-foreground text-center mb-4">
         {t.testimonials.title}
       </h2>
       <div
-        className="overflow-x-hidden relative w-full"
+        className="overflow-x-hidden relative w-full mt-8"
         style={{ height: 220 }}
         ref={containerRef}
       >
