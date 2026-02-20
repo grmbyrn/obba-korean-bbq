@@ -1,25 +1,27 @@
 "use client";
 import { motion } from "framer-motion";
-import dynamic from "next/dynamic";
-
-const Embers = dynamic(() => import("./Embers"), {
-  ssr: false,
-});
 
 const Hero = () => {
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
+      {/* Background video */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover z-0"
+        src="/videos/korean-bbq-bg.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        aria-label="Korean BBQ background video"
+      />
+      {/* Dark overlay for better contrast */}
+      <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none" />
       {/* Background gradient simulating grill glow */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-background" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center_bottom,_hsl(20_84%_48%/0.12)_0%,_transparent_60%)]" />
-
-      {/* Embers */}
-      <div className="absolute inset-x-0 bottom-0 h-40 pointer-events-none">
-        <Embers />
-      </div>
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-background z-20 pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center_bottom,_hsl(20_84%_48%/0.12)_0%,_transparent_60%)] z-20 pointer-events-none" />
 
       {/* Content */}
-      <div className="relative z-10 text-center px-6">
+      <div className="relative z-30 text-center px-6">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -32,7 +34,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.15 }}
-          className="font-oswald text-5xl md:text-7xl lg:text-8xl font-bold uppercase tracking-tight text-foreground leading-none"
+          className="font-oswald text-5xl md:text-7xl lg:text-8xl font-bold uppercase tracking-tight text-foreground leading-none drop-shadow-[0_4px_24px_rgba(0,0,0,0.7)]"
         >
           Obba Korean
           <br />
@@ -54,13 +56,15 @@ const Hero = () => {
         >
           <a
             href="#booking"
-            className="rounded-sm bg-primary px-8 py-3 font-oswald text-sm font-semibold uppercase tracking-wider text-primary-foreground hover:bg-primary/90 transition-colors"
+            className="relative rounded-lg bg-primary/70 backdrop-blur-sm px-6 py-2 font-oswald text-sm font-semibold uppercase tracking-wider text-primary-foreground shadow-md border border-primary/20 transition-all duration-200 hover:scale-102 hover:bg-primary/80 hover:shadow-primary/20 hover:shadow-lg focus:outline-none focus:ring-1 focus:ring-primary/40"
+            style={{ WebkitBackdropFilter: 'blur(4px)' }}
           >
             Book a Table
           </a>
           <a
             href="#menu"
-            className="rounded-sm border border-foreground/30 px-8 py-3 font-oswald text-sm font-semibold uppercase tracking-wider text-foreground hover:border-primary hover:text-primary transition-colors"
+            className="relative rounded-lg bg-white/10 backdrop-blur-sm px-6 py-2 font-oswald text-sm font-semibold uppercase tracking-wider text-foreground shadow-md border border-white/20 transition-all duration-200 hover:scale-102 hover:bg-white/20 hover:text-primary hover:border-primary focus:outline-none focus:ring-1 focus:ring-primary/40"
+            style={{ WebkitBackdropFilter: 'blur(4px)' }}
           >
             View Menu
           </a>

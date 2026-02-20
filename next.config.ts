@@ -2,7 +2,15 @@ import type { NextConfig } from "next";
 
 
 const nextConfig: NextConfig = {
-  // No i18n config needed for app/[locale] routing
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "yummiyaam.umern.designtocodes.com",
+        pathname: "/_next/static/media/**",
+      },
+    ],
+  },
 };
 
 export default nextConfig;

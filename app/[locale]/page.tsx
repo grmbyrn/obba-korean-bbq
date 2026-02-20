@@ -7,6 +7,7 @@ import LocationSection from "@/components/LocationSection";
 import Footer from "@/components/Footer";
 import Testimonials from "../components/Testimonials";
 import { LocaleProvider } from "../lib/i18n";
+import MainDishes from "@/components/MainDishes";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <MenuSection />
+        <MainDishes />
         <Experience />
         <Testimonials />
         <BookingSection />
