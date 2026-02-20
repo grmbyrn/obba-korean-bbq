@@ -1,4 +1,5 @@
-import { Instagram, Facebook } from "lucide-react";
+import { Instagram } from "lucide-react";
+import Link from "next/link";
 
 const Footer = () => (
   <footer className="border-t border-border bg-background py-12 px-6">
@@ -8,13 +9,13 @@ const Footer = () => (
           OBBA<span className="text-primary">.</span>
         </p>
         <p className="mt-1 font-inter text-xs text-muted-foreground">
-          Carrer d'Exemple, 42 · 08007 Barcelona
+          Carrer de Nicaragua, 97 · 08029 Barcelona
         </p>
       </div>
 
       <div className="flex items-center gap-4">
         <a
-          href="https://instagram.com"
+          href="https://www.instagram.com/obba.korea.bbq"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"
@@ -22,20 +23,16 @@ const Footer = () => (
         >
           <Instagram className="h-4 w-4" />
         </a>
-        <a
-          href="https://facebook.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Facebook"
-          className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted-foreground hover:text-primary hover:border-primary transition-colors"
-        >
-          <Facebook className="h-4 w-4" />
-        </a>
       </div>
 
-      <p className="font-inter text-xs text-muted-foreground">
-        © {new Date().getFullYear()} Obba Korean BBQ. All rights reserved.
-      </p>
+      <div className="flex flex-col items-center md:items-end">
+        <p className="font-inter text-xs text-muted-foreground">
+          © {new Date().getFullYear()} Obba Korean BBQ. All rights reserved.
+        </p>
+        <Link href="https://graemebyrne.com" target="_blank" className="text-amber-600 hover:underline mt-1 text-xs" aria-label="Site by Graeme Byrne">
+          Site by Graeme Byrne
+        </Link>
+      </div>
     </div>
   </footer>
 );

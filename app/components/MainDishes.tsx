@@ -4,34 +4,34 @@ import Image from "next/image";
 
 const dishes = [
   {
-    title: "Calamari Rings",
+    title: "Bibimbap",
     price: "29$/390g",
-    description: "Baked fish fillet",
-    image: "https://yummiyaam.umern.designtocodes.com/_next/static/media/main-dish-1.bce1e790.jpg",
+    description: "Classic Korean rice bowl",
+    image: "/images/bibimbap.jpg",
   },
   {
-    title: "Garlic Butter Shrimp",
+    title: "Fried Rice Noodles",
     price: "29$/390g",
-    description: "Garlic Butter Shrimps",
-    image: "https://yummiyaam.umern.designtocodes.com/_next/static/media/main-dish-1.bce1e790.jpg",
+    description: "Savory stir-fried noodles",
+    image: "/images/fried-rice-noodles.jpg",
   },
   {
-    title: "Baked Fish Fillet",
+    title: "Korean BBQ",
     price: "20$/390g",
-    description: "Baked fish fillet",
-    image: "https://yummiyaam.umern.designtocodes.com/_next/static/media/main-dish-1.bce1e790.jpg",
+    description: "Grilled marinated meats",
+    image: "/images/korean-bbq.jpg",
   },
   {
-    title: "Chicken Parmesan",
+    title: "Korean Dessert",
     price: "29$/390g",
-    description: "Chicken Parmesan",
-    image: "https://yummiyaam.umern.designtocodes.com/_next/static/media/main-dish-1.bce1e790.jpg",
+    description: "Sweet traditional treat",
+    image: "/images/korean-dessert.jpg",
   },
   {
-    title: "Grilled Ribeye Steak",
+    title: "Steak Tartar",
     price: "29$/390g",
-    description: "Grilled Ribeye Steak",
-    image: "https://yummiyaam.umern.designtocodes.com/_next/static/media/main-dish-1.bce1e790.jpg",
+    description: "Fresh seasoned beef",
+    image: "/images/steak-tartar.jpg",
   },
 ];
 
@@ -93,7 +93,6 @@ export default function MainDishes() {
                 style={{ height: "35%" }}
               >
                 <h4 className="text-xl md:text-2xl font-bold">{dish.title}</h4>
-                <p className="text-sm opacity-80">{dish.price}</p>
                 <p className="text-xs md:text-sm text-orange-400 mt-2 font-semibold uppercase">
                   {dish.description}
                 </p>

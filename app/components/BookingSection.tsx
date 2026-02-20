@@ -24,7 +24,7 @@ const BookingSection = () => {
           viewport={{ once: true }}
           className="font-oswald text-4xl md:text-5xl font-bold uppercase tracking-tight text-foreground"
         >
-          Reserve Your <span className="text-primary">Table</span>
+          Reserve Your <span className="text-orange-500">Table</span>
         </motion.h2>
         <p className="mt-4 font-inter text-muted-foreground">
           Select your details below and we&apos;ll redirect you to confirm your reservation.

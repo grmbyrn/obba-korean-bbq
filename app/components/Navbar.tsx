@@ -31,12 +31,12 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
-        <a href="#" className="font-oswald text-2xl font-bold tracking-wider text-foreground">
+        <a href="#" className="font-oswald text-2xl font-bold tracking-wider text-foreground min-w-[90px] md:min-w-0">
           OBBA<span className="text-primary">.</span>
         </a>
 
         {/* Desktop */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -48,7 +48,7 @@ const Navbar = () => {
           ))}
           <a
             href="#booking"
-            className="ml-4 rounded-sm bg-primary px-5 py-2 font-oswald text-sm font-semibold uppercase tracking-wider text-primary-foreground hover:bg-primary/90 transition-colors"
+            className="ml-4 rounded-sm bg-primary px-5 py-2 font-oswald text-sm font-semibold uppercase tracking-wider text-primary-foreground hover:bg-primary/90 transition-colors whitespace-nowrap"
           >
             Book a Table
           </a>
@@ -56,7 +56,7 @@ const Navbar = () => {
 
         {/* Mobile */}
         <Sheet open={open} onOpenChange={setOpen}>
-          <SheetTrigger asChild className="md:hidden">
+          <SheetTrigger asChild className="lg:hidden">
             <button aria-label="Open menu">
               <Menu className="h-6 w-6 text-foreground" />
             </button>
@@ -76,7 +76,7 @@ const Navbar = () => {
               <a
                 href="#booking"
                 onClick={() => setOpen(false)}
-                className="mt-4 rounded-sm bg-primary px-5 py-3 text-center font-oswald text-sm font-semibold uppercase tracking-wider text-primary-foreground"
+                className="mt-4 rounded-sm bg-primary px-5 py-3 text-center font-oswald text-sm font-semibold uppercase tracking-wider text-primary-foreground whitespace-nowrap"
               >
                 Book a Table
               </a>

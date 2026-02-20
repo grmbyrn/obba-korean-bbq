@@ -17,7 +17,7 @@ const Experience = () => (
         viewport={{ once: true }}
         className="font-oswald text-4xl md:text-5xl font-bold uppercase tracking-tight text-foreground"
       >
-        The Obba <span className="text-primary">Experience</span>
+        The <span className="text-orange-500">Obba</span> Experience
       </motion.h2>
       <p className="mt-4 font-inter text-muted-foreground max-w-lg mx-auto">
         Korean BBQ is more than a meal — it&apos;s an interactive dining ritual.
