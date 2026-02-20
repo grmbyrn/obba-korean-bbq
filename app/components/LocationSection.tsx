@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { MapPin, Phone, Mail, ExternalLink } from "lucide-react";
-import Link from "next/link";
+import { MapPin, Phone, ExternalLink } from "lucide-react";
 
 const LocationSection = () => (
   <section id="location" className="py-24 px-6 bg-secondary/40">
@@ -44,7 +43,9 @@ const LocationSection = () => (
           className="flex flex-col justify-center gap-8"
         >
           <div>
-            <h3 className="font-oswald text-lg font-semibold uppercase tracking-wider text-primary">Address</h3>
+            <h3 className="font-oswald text-lg font-semibold uppercase tracking-wider text-primary">
+              Address
+            </h3>
             <a
               href="https://maps.app.goo.gl/kjgWNgckDingfiCg6"
               target="_blank"
@@ -58,27 +59,51 @@ const LocationSection = () => (
           </div>
 
           <div>
-            <h3 className="font-oswald text-lg font-semibold uppercase tracking-wider text-primary mb-3">Hours</h3>
+            <h3 className="font-oswald text-lg font-semibold uppercase tracking-wider text-primary mb-3">
+              Hours
+            </h3>
             <div className="grid grid-cols-2 gap-x-6 gap-y-2 font-inter text-sm text-muted-foreground bg-background/60 rounded-lg p-4 shadow">
               <div className="font-bold text-foreground">Monday</div>
-              <div>1–4 pm<br />7:30–11:30 pm</div>
+              <div>
+                1–4 pm
+                <br />
+                7:30–11:30 pm
+              </div>
               <div className="font-bold text-foreground">Tuesday</div>
               <div className="text-orange-500 font-semibold">Closed</div>
               <div className="font-bold text-foreground">Wednesday</div>
               <div>7:30–11 pm</div>
               <div className="font-bold text-foreground">Thursday</div>
-              <div>1–4:30 pm<br />7:30–11:30 pm</div>
+              <div>
+                1–4:30 pm
+                <br />
+                7:30–11:30 pm
+              </div>
               <div className="font-bold text-foreground">Friday</div>
-              <div>1–4:30 pm<br />7:30–11:30 pm</div>
+              <div>
+                1–4:30 pm
+                <br />
+                7:30–11:30 pm
+              </div>
               <div className="font-bold text-foreground">Saturday</div>
-              <div>1–4:30 pm<br />7:30–11:30 pm</div>
+              <div>
+                1–4:30 pm
+                <br />
+                7:30–11:30 pm
+              </div>
               <div className="font-bold text-foreground">Sunday</div>
-              <div>1–4:30 pm<br />7:30–11:30 pm</div>
+              <div>
+                1–4:30 pm
+                <br />
+                7:30–11:30 pm
+              </div>
             </div>
           </div>
 
           <div>
-            <h3 className="font-oswald text-lg font-semibold uppercase tracking-wider text-primary">Contact</h3>
+            <h3 className="font-oswald text-lg font-semibold uppercase tracking-wider text-primary">
+              Contact
+            </h3>
             <div className="mt-2 space-y-1 font-inter text-sm text-muted-foreground">
               <a
                 href="tel:+34633085581"

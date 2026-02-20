@@ -3,9 +3,24 @@ import { motion } from "framer-motion";
 import { Flame, Beef, UtensilsCrossed } from "lucide-react";
 
 const steps = [
-  { icon: Flame, title: "Select", description: "Choose from our premium cuts of marinated beef, pork, and chef combos." },
-  { icon: Beef, title: "Grill", description: "Cook it yourself on our traditional tabletop charcoal grills to your perfect doneness." },
-  { icon: UtensilsCrossed, title: "Enjoy", description: "Wrap in fresh lettuce with ssamjang, garlic, and our signature sides." },
+  {
+    icon: Flame,
+    title: "Select",
+    description:
+      "Choose from our premium cuts of marinated beef, pork, and chef combos.",
+  },
+  {
+    icon: Beef,
+    title: "Grill",
+    description:
+      "Cook it yourself on our traditional tabletop charcoal grills to your perfect doneness.",
+  },
+  {
+    icon: UtensilsCrossed,
+    title: "Enjoy",
+    description:
+      "Wrap in fresh lettuce with ssamjang, garlic, and our signature sides.",
+  },
 ];
 
 const Experience = () => (
@@ -39,8 +54,12 @@ const Experience = () => (
             <span className="mt-4 font-oswald text-xs uppercase tracking-[0.25em] text-primary">
               Step {i + 1}
             </span>
-            <h3 className="mt-2 font-oswald text-2xl font-bold uppercase text-foreground">{step.title}</h3>
-            <p className="mt-2 font-inter text-sm text-muted-foreground">{step.description}</p>
+            <h3 className="mt-2 font-oswald text-2xl font-bold uppercase text-foreground">
+              {step.title}
+            </h3>
+            <p className="mt-2 font-inter text-sm text-muted-foreground">
+              {step.description}
+            </p>
           </motion.div>
         ))}
       </div>

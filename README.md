@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+# Obba Korean BBQ – Restaurant Website
+
+A modern, visually rich, and fully responsive restaurant website for Obba Korean BBQ, built with Next.js, React, and Tailwind CSS. This project demonstrates advanced UI/UX, accessibility, and real-world business logic for a premium dining experience.
+
+## Features
+
+- **Hero Section with Video Background:** Immersive landing experience with a high-quality looping video and animated text.
+- **Dynamic Menu & Main Dishes:** Interactive, visually appealing menu with concise dish descriptions and hover effects.
+- **Booking System:** Custom reservation form with date picker, guest and time selection, and validation.
+- **Location & Hours:** Responsive map integration and a clear, modern weekly hours grid.
+- **Testimonials:** Customer reviews carousel for social proof.
+- **Internationalization Ready:** Locale support for future multi-language expansion.
+- **Mobile-First & Accessible:** Fully responsive, keyboard navigable, and accessible color contrast.
+- **Modern UI Components:** Built with Tailwind CSS, Framer Motion, Lucide icons, and Radix UI primitives.
+- **SEO & Performance:** Optimized for fast load times and search engine visibility.
+
+## Tech Stack
+
+- [Next.js 16](https://nextjs.org/) (App Router)
+- [React 19](https://react.dev/)
+- [Tailwind CSS 4](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/) (animations)
+- [Lucide React](https://lucide.dev/) (icons)
+- [Radix UI](https://www.radix-ui.com/) (accessible UI primitives)
+- [react-datepicker](https://reactdatepicker.com/) (date picker)
+- [date-fns](https://date-fns.org/) (date utilities)
+- [TypeScript](https://www.typescriptlang.org/)
 
 ## Getting Started
 
-First, run the development server:
+1. **Install dependencies:**
+	```bash
+	npm install
+	```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. **Run the development server:**
+	```bash
+	npm run dev
+	```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Open your browser:**
+	Visit [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `app/components/` – All UI components (Hero, BookingSection, MenuSection, etc.)
+- `app/lib/` – Utility and i18n logic
+- `public/` – Static assets (images, video)
+- `app/hooks/` – Custom React hooks
+- `app/locales/` – Localization files
 
-## Learn More
+## Customization
 
-To learn more about Next.js, take a look at the following resources:
+- **Menu & Dishes:** Edit `app/components/MainDishes.tsx` and `MenuSection.tsx`.
+- **Opening Hours:** Edit `app/components/LocationSection.tsx`.
+- **Testimonials:** Edit `app/components/Testimonials.tsx`.
+- **Branding & Content:** Update images and video in `public/`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Deploy easily to [Vercel](https://vercel.com/) or any platform supporting Next.js.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is a showcase of modern React/Next.js development, advanced UI, and real-world business logic.  
+Built and maintained by [Graeme Byrne](https://graemebyrne.com).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---

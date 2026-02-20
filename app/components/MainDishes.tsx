@@ -75,9 +75,9 @@ export default function MainDishes() {
               />
 
               {/* Dark Gradient Overlay - Only visible when active */}
-              <div 
+              <div
                 className={`absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent transition-opacity duration-500 
-                ${isActive ? "opacity-100" : "opacity-0"}`} 
+                ${isActive ? "opacity-100" : "opacity-0"}`}
               />
 
               {/* Info Card - Slides up from below the bottom edge */}
@@ -86,9 +86,11 @@ export default function MainDishes() {
                   absolute bottom-0 left-0 w-full p-6 text-white 
                   transition-all duration-500 ease-out flex flex-col justify-end
                   /* Hidden State: pushed down 100% and transparent */
-                  ${isActive 
-                    ? "translate-y-0 opacity-100" 
-                    : "translate-y-full opacity-0 pointer-events-none"}
+                  ${
+                    isActive
+                      ? "translate-y-0 opacity-100"
+                      : "translate-y-full opacity-0 pointer-events-none"
+                  }
                 `}
                 style={{ height: "35%" }}
               >

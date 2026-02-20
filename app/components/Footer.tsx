@@ -29,7 +29,12 @@ const Footer = () => (
         <p className="font-inter text-xs text-muted-foreground">
           © {new Date().getFullYear()} Obba Korean BBQ. All rights reserved.
         </p>
-        <Link href="https://graemebyrne.com" target="_blank" className="text-amber-600 hover:underline mt-1 text-xs" aria-label="Site by Graeme Byrne">
+        <Link
+          href="https://graemebyrne.com"
+          target="_blank"
+          className="text-amber-600 hover:underline mt-1 text-xs"
+          aria-label="Site by Graeme Byrne"
+        >
           Site by Graeme Byrne
         </Link>
       </div>

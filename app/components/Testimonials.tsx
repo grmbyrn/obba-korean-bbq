@@ -1,6 +1,5 @@
 "use client";
 import { useRef, useEffect } from "react";
-import { motion } from "framer-motion";
 import { useTranslations } from "../lib/i18n";
 
 type Testimonial = {
@@ -43,7 +42,9 @@ export default function Testimonials() {
 
   return (
     <section className="w-full">
-      <h2 className="text-3xl font-bold mb-8 text-center w-full">{t.testimonials.title}</h2>
+      <h2 className="text-3xl font-bold mb-8 text-center w-full">
+        {t.testimonials.title}
+      </h2>
       <div
         className="overflow-x-hidden relative w-full"
         style={{ height: 220 }}
@@ -52,28 +53,34 @@ export default function Testimonials() {
         <div
           className="flex gap-6"
           ref={scrollRef}
-          style={{ width: 'max-content' }}
+          style={{ width: "max-content" }}
         >
           {scrollingTestimonials.map((testimonial, idx) => {
             // Get initials for avatar
             const initials = testimonial.name
-              .split(' ')
+              .split(" ")
               .map((n) => n[0])
-              .join('')
+              .join("")
               .toUpperCase();
             return (
               <div
                 key={idx}
                 className="flex-shrink-0 w-[350px] md:w-[400px] rounded-2xl border border-slate-200 bg-white p-6 hover:border-amber-300 transition-colors duration-300 shadow-sm"
               >
-                <p className="text-slate-600 leading-relaxed text-sm">&quot;{testimonial.text}&quot;</p>
+                <p className="text-slate-600 leading-relaxed text-sm">
+                  &quot;{testimonial.text}&quot;
+                </p>
                 <div className="mt-4 flex items-center gap-3">
                   <div className="h-9 w-9 rounded-full bg-gradient-to-br from-amber-400 to-amber-500 flex items-center justify-center text-xs font-bold text-navy">
                     {initials}
                   </div>
                   <div>
-                    <div className="font-medium text-slate-900 text-sm">{testimonial.name}</div>
-                    <div className="text-xs text-slate-500">{testimonial.location}</div>
+                    <div className="font-medium text-slate-900 text-sm">
+                      {testimonial.name}
+                    </div>
+                    <div className="text-xs text-slate-500">
+                      {testimonial.location}
+                    </div>
                   </div>
                 </div>
               </div>

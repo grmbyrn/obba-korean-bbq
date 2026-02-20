@@ -46,7 +46,8 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.35 }}
           className="font-inter mt-6 max-w-md mx-auto text-muted-foreground text-base md:text-lg"
         >
-          An authentic Korean barbecue experience — grill your own premium cuts at your table.
+          An authentic Korean barbecue experience — grill your own premium cuts
+          at your table.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -57,14 +58,14 @@ const Hero = () => {
           <a
             href="#booking"
             className="relative rounded-lg bg-primary/70 backdrop-blur-sm px-6 py-2 font-oswald text-sm font-semibold uppercase tracking-wider text-primary-foreground shadow-md border border-primary/20 transition-all duration-200 hover:scale-102 hover:bg-primary/80 hover:shadow-primary/20 hover:shadow-lg focus:outline-none focus:ring-1 focus:ring-primary/40"
-            style={{ WebkitBackdropFilter: 'blur(4px)' }}
+            style={{ WebkitBackdropFilter: "blur(4px)" }}
           >
             Book a Table
           </a>
           <a
             href="#menu"
             className="relative rounded-lg bg-white/10 backdrop-blur-sm px-6 py-2 font-oswald text-sm font-semibold uppercase tracking-wider text-foreground shadow-md border border-white/20 transition-all duration-200 hover:scale-102 hover:bg-white/20 hover:text-primary hover:border-primary focus:outline-none focus:ring-1 focus:ring-primary/40"
-            style={{ WebkitBackdropFilter: 'blur(4px)' }}
+            style={{ WebkitBackdropFilter: "blur(4px)" }}
           >
             View Menu
           </a>

@@ -5,9 +5,21 @@ import { CalendarIcon, Users, Clock } from "lucide-react";
 import { format } from "date-fns";
 import { cn } from "@/lib/utils";
 import { Calendar } from "@/components/ui/calendar";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 
-const timeSlots = ["12:00", "13:00", "14:00", "19:00", "20:00", "21:00", "22:00"];
+const timeSlots = [
+  "12:00",
+  "13:00",
+  "14:00",
+  "19:00",
+  "20:00",
+  "21:00",
+  "22:00",
+];
 const partySizes = [1, 2, 3, 4, 5, 6, 7, 8];
 
 const BookingSection = () => {
@@ -27,7 +39,8 @@ const BookingSection = () => {
           Reserve Your <span className="text-orange-500">Table</span>
         </motion.h2>
         <p className="mt-4 font-inter text-muted-foreground">
-          Select your details below and we&apos;ll redirect you to confirm your reservation.
+          Select your details below and we&apos;ll redirect you to confirm your
+          reservation.
         </p>
 
         <motion.div
@@ -48,21 +61,28 @@ const BookingSection = () => {
                   <button
                     className={cn(
                       "w-full rounded-sm border border-border bg-secondary px-4 py-2.5 text-left font-inter text-sm transition-colors hover:border-primary",
-                      !date && "text-muted-foreground"
+                      !date && "text-muted-foreground",
                     )}
                   >
                     {date ? format(date, "PPP") : "Pick a date"}
                   </button>
                 </PopoverTrigger>
-                <PopoverContent className="w-auto p-0" align="start">
-                  <Calendar
-                    mode="single"
-                    selected={date}
-                    onSelect={setDate}
-                    disabled={(d) => d < new Date()}
-                    initialFocus
-                    className={cn("p-3 pointer-events-auto")}
-                  />
+                <PopoverContent
+                  className="w-auto p-0 z-[9999] shadow-2xl border-none"
+                  align="start"
+                  side="bottom"
+                  sideOffset={10}
+                >
+                  {/* We wrap the calendar in a div with a forced, non-transparent background */}
+                  <div className="bg-black dark:bg-zinc-950 rounded-md overflow-hidden">
+                    <Calendar
+                      selected={date}
+                      onSelect={(date) => setDate(date ?? undefined)}
+                      disabled={(d) => d < new Date()}
+                      initialFocus
+                      className="p-3"
+                    />
+                  </div>
                 </PopoverContent>
               </Popover>
             </div>
@@ -96,7 +116,9 @@ const BookingSection = () => {
                 className="w-full rounded-sm border border-border bg-secondary px-4 py-2.5 font-inter text-sm text-foreground transition-colors hover:border-primary appearance-none"
               >
                 {timeSlots.map((t) => (
-                  <option key={t} value={t}>{t}</option>
+                  <option key={t} value={t}>
+                    {t}
+                  </option>
                 ))}
               </select>
             </div>
