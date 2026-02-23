@@ -1,70 +1,81 @@
 "use client";
 import { motion } from "framer-motion";
 import { Flame, Beef, UtensilsCrossed } from "lucide-react";
+import { useTranslations } from "../lib/i18n";
 
-const steps = [
-  {
-    icon: Flame,
-    title: "Select",
-    description:
-      "Choose from our premium cuts of marinated beef, pork, and chef combos.",
-  },
-  {
-    icon: Beef,
-    title: "Grill",
-    description:
-      "Cook it yourself on our traditional tabletop charcoal grills to your perfect doneness.",
-  },
-  {
-    icon: UtensilsCrossed,
-    title: "Enjoy",
-    description:
-      "Wrap in fresh lettuce with ssamjang, garlic, and our signature sides.",
-  },
-];
+const iconMap = {
+  Flame,
+  Beef,
+  UtensilsCrossed,
+};
 
-const Experience = () => (
-  <section id="experience" className="py-24 px-6 bg-secondary/40">
-    <div className="container mx-auto max-w-4xl text-center">
-      <motion.h2
+type ExperienceStep = {
+  title: string;
+  heading: string;
+  description: string;
+  icon?: string;
+};
+
+export default function Experience() {
+  const t = useTranslations();
+  const steps = (t.experience.steps as ExperienceStep[]).map((step, i) => {
+    const Icon = step.icon && iconMap[step.icon as keyof typeof iconMap];
+    if (!Icon && step.icon) {
+      if (process.env.NODE_ENV !== "production") {
+        console.warn(
+          `Lucide icon '${step.icon}' not found. Check iconMap and JSON.`,
+        );
+      }
+    }
+    return {
+      ...step,
+      Icon,
+      stepNumber: step.title || `Step ${i + 1}`,
+    };
+  });
+
+  return (
+    <section id="experience" className="py-24 px-6 bg-secondary/40">
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="font-oswald text-4xl md:text-5xl font-bold uppercase tracking-tight text-foreground"
+        className="container mx-auto max-w-4xl text-center"
       >
-        The <span className="text-orange-500">Obba</span> Experience
-      </motion.h2>
-      <p className="mt-4 font-inter text-muted-foreground max-w-lg mx-auto">
-        Korean BBQ is more than a meal — it&apos;s an interactive dining ritual.
-      </p>
-
-      <div className="mt-16 grid gap-12 sm:grid-cols-3">
-        {steps.map((step, i) => (
-          <motion.div
-            key={step.title}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.15, duration: 0.5 }}
-            className="flex flex-col items-center"
-          >
-            <div className="flex h-16 w-16 items-center justify-center rounded-full border border-primary/30 bg-primary/10">
-              <step.icon className="h-7 w-7 text-primary" />
-            </div>
-            <span className="mt-4 font-oswald text-xs uppercase tracking-[0.25em] text-primary">
-              Step {i + 1}
+        <h2 className="font-oswald text-4xl md:text-5xl font-bold uppercase tracking-tight text-foreground">
+          {t.experience.title || (
+            <span>
+              The <span className="text-orange-500">Obba</span> Experience
             </span>
-            <h3 className="mt-2 font-oswald text-2xl font-bold uppercase text-foreground">
-              {step.title}
-            </h3>
-            <p className="mt-2 font-inter text-sm text-muted-foreground">
-              {step.description}
-            </p>
-          </motion.div>
-        ))}
-      </div>
-    </div>
-  </section>
-);
+          )}
+        </h2>
+        <p className="mt-4 font-inter text-muted-foreground max-w-lg mx-auto">
+          {t.experience.subtitle}
+        </p>
 
-export default Experience;
+        <div className="mt-16 grid gap-12 sm:grid-cols-3">
+          {steps.map((step) => (
+            <div key={step.heading} className="flex flex-col items-center">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full border border-primary/30 bg-primary/10">
+                {step.Icon ? (
+                  <step.Icon className="h-7 w-7 text-primary" />
+                ) : (
+                  <span className="h-7 w-7 text-primary">?</span>
+                )}
+              </div>
+              <span className="mt-4 font-oswald text-xs uppercase tracking-[0.25em] text-primary">
+                {step.stepNumber}
+              </span>
+              <h3 className="mt-2 font-oswald text-2xl font-bold uppercase text-foreground">
+                {step.heading}
+              </h3>
+              <p className="mt-2 font-inter text-sm text-muted-foreground">
+                {step.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </motion.div>
+    </section>
+  );
+}

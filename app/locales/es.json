@@ -1,4 +1,11 @@
 {
+  "hero": {
+    "subtitle": "Lo mejor de Barcelona",
+    "title": "Obba Korean BBQ",
+    "description": "Una auténtica experiencia de barbacoa coreana: asa tus propios cortes premium en tu mesa.",
+    "book": "Reservar mesa",
+    "menu": "Ver menú"
+  },
   "testimonials": {
     "title": "Lo que dicen nuestros clientes",
     "reviews": [
@@ -11,6 +18,144 @@
         "name": "Maria Lopez",
         "location": "Barcelona, España",
         "text": "Me encantó la variedad del menú. ¡Definitivamente volveré con amigos!"
+      }
+    ]
+  },
+  "menuSection": {
+    "title": "Nuestro Menú",
+    "categories": {
+      "all": "Todo",
+      "beef": "Ternera",
+      "pork": "Cerdo",
+      "combos": "Combos",
+      "drinks": "Bebidas"
+    },
+    "items": {
+      "Chadol Baegi": {
+        "name": "Chadol Baegi",
+        "description": "Pecho de ternera cortado en finas láminas, marmoleado y tierno",
+        "price": "€16",
+        "category": "beef"
+      },
+      "Galbi": {
+        "name": "Galbi",
+        "description": "Costillas cortas marinadas premium, glaseado dulce de soja",
+        "price": "€22",
+        "category": "beef"
+      },
+      "Bulgogi": {
+        "name": "Bulgogi",
+        "description": "Ternera marinada clásica, sésamo y pera",
+        "price": "€18",
+        "category": "beef"
+      },
+      "Wagyu Special": {
+        "name": "Wagyu Especial",
+        "description": "Wagyu japonés A5, disponibilidad limitada diaria",
+        "price": "€38",
+        "category": "beef"
+      },
+      "Samgyeopsal": {
+        "name": "Samgyeopsal",
+        "description": "Panceta de cerdo en corte grueso, perfección sin condimentar",
+        "price": "€14",
+        "category": "pork"
+      },
+      "Dwaeji Bulgogi": {
+        "name": "Dwaeji Bulgogi",
+        "description": "Cerdo marinado picante, glaseado de gochujang",
+        "price": "€15",
+        "category": "pork"
+      },
+      "Moksal": {
+        "name": "Moksal",
+        "description": "Cuello de cerdo, bien marmoleado y jugoso",
+        "price": "€14",
+        "category": "pork"
+      },
+      "Obba Combo": {
+        "name": "Obba Combo",
+        "description": "Selección del chef de ternera y cerdo para dos",
+        "price": "€42",
+        "category": "combos"
+      },
+      "Family Feast": {
+        "name": "Banquete Familiar",
+        "description": "Mezcla premium para 4 con todos los acompañamientos incluidos",
+        "price": "€78",
+        "category": "combos"
+      },
+      "Soju Classic": {
+        "name": "Soju Clásico",
+        "description": "Licor de arroz coreano, original o con sabor",
+        "price": "€8",
+        "category": "drinks"
+      },
+      "Makgeolli": {
+        "name": "Makgeolli",
+        "description": "Tradicional vino de arroz lechoso, ligeramente dulce",
+        "price": "€7",
+        "category": "drinks"
+      },
+      "Korean Craft Beer": {
+        "name": "Cerveza Artesanal Coreana",
+        "description": "Selección rotativa de cervezas lager artesanales coreanas",
+        "price": "€6",
+        "category": "drinks"
+      }
+    }
+  },
+  "mainDishes": {
+    "mainDishesTitle": "Platos Principales",
+    "items": [
+      {
+        "title": "Bibimbap",
+        "description": "Bol de arroz coreano clásico",
+        "image": "/images/bibimbap.jpg"
+      },
+      {
+        "title": "Fideos de Arroz Fritos",
+        "description": "Fideos salteados sabrosos",
+        "image": "/images/fried-rice-noodles.jpg"
+      },
+      {
+        "title": "Barbacoa Coreana",
+        "description": "Carnes marinadas a la parrilla",
+        "image": "/images/korean-bbq.jpg"
+      },
+      {
+        "title": "Postre Coreano",
+        "description": "Dulce tradicional coreano",
+        "image": "/images/korean-dessert.jpg"
+      },
+      {
+        "title": "Steak Tartar",
+        "description": "Carne de res fresca y sazonada",
+        "image": "/images/steak-tartar.jpg"
+      }
+    ]
+  },
+  "experience": {
+    "title": "La Experiencia Obba",
+    "subtitle": "La barbacoa coreana es más que una comida: es un ritual gastronómico interactivo.",
+    "steps": [
+      {
+        "title": "Paso 1",
+        "heading": "Selecciona",
+        "description": "Elige entre nuestros cortes premium de ternera marinada, cerdo y combinaciones del chef.",
+        "icon": "Flame"
+      },
+      {
+        "title": "Paso 2",
+        "heading": "Asa",
+        "description": "Cocínalo tú mismo en nuestras parrillas tradicionales de carbón hasta el punto que prefieras.",
+        "icon": "Beef"
+      },
+      {
+        "title": "Paso 3",
+        "heading": "Disfruta",
+        "description": "Envuelve en lechuga fresca con ssamjang, ajo y nuestras guarniciones exclusivas.",
+        "icon": "UtensilsCrossed"
       }
     ]
   }

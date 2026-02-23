@@ -1,4 +1,11 @@
 {
+  "hero": {
+    "subtitle": "Barcelona's Finest",
+    "title": "Obba Korean BBQ",
+    "description": "An authentic Korean barbecue experience — grill your own premium cuts at your table.",
+    "book": "Book a Table",
+    "menu": "View Menu"
+  },
   "testimonials": {
     "title": "What Our Customers Say",
     "reviews": [
@@ -11,6 +18,144 @@
         "name": "Maria Lopez",
         "location": "Barcelona, Spain",
         "text": "Loved the variety on the menu. Will definitely come back with friends!"
+      }
+    ]
+  },
+  "menuSection": {
+    "title": "Our Menu",
+    "categories": {
+      "all": "All",
+      "beef": "Beef",
+      "pork": "Pork",
+      "combos": "Combos",
+      "drinks": "Drinks"
+    },
+    "items": {
+      "Chadol Baegi": {
+        "name": "Chadol Baegi",
+        "description": "Thinly sliced beef brisket, marbled and tender",
+        "price": "€16",
+        "category": "beef"
+      },
+      "Galbi": {
+        "name": "Galbi",
+        "description": "Premium marinated short ribs, sweet soy glaze",
+        "price": "€22",
+        "category": "beef"
+      },
+      "Bulgogi": {
+        "name": "Bulgogi",
+        "description": "Classic marinated beef, sesame and pear",
+        "price": "€18",
+        "category": "beef"
+      },
+      "Wagyu Special": {
+        "name": "Wagyu Special",
+        "description": "A5 Japanese wagyu, limited daily availability",
+        "price": "€38",
+        "category": "beef"
+      },
+      "Samgyeopsal": {
+        "name": "Samgyeopsal",
+        "description": "Thick-cut pork belly, unseasoned perfection",
+        "price": "€14",
+        "category": "pork"
+      },
+      "Dwaeji Bulgogi": {
+        "name": "Dwaeji Bulgogi",
+        "description": "Spicy marinated pork, gochujang glaze",
+        "price": "€15",
+        "category": "pork"
+      },
+      "Moksal": {
+        "name": "Moksal",
+        "description": "Pork collar, well-marbled and juicy",
+        "price": "€14",
+        "category": "pork"
+      },
+      "Obba Combo": {
+        "name": "Obba Combo",
+        "description": "Chef's selection of beef and pork for two",
+        "price": "€42",
+        "category": "combos"
+      },
+      "Family Feast": {
+        "name": "Family Feast",
+        "description": "Premium mix for 4 with all sides included",
+        "price": "€78",
+        "category": "combos"
+      },
+      "Soju Classic": {
+        "name": "Soju Classic",
+        "description": "Korean rice spirit, original or flavored",
+        "price": "€8",
+        "category": "drinks"
+      },
+      "Makgeolli": {
+        "name": "Makgeolli",
+        "description": "Traditional milky rice wine, slightly sweet",
+        "price": "€7",
+        "category": "drinks"
+      },
+      "Korean Craft Beer": {
+        "name": "Korean Craft Beer",
+        "description": "Rotating selection of Korean craft lagers",
+        "price": "€6",
+        "category": "drinks"
+      }
+    }
+  },
+  "mainDishes": {
+    "mainDishesTitle": "Main Dishes",
+    "items": [
+      {
+        "title": "Bibimbap",
+        "description": "Classic Korean rice bowl",
+        "image": "/images/bibimbap.jpg"
+      },
+      {
+        "title": "Fried Rice Noodles",
+        "description": "Savory stir-fried noodles",
+        "image": "/images/fried-rice-noodles.jpg"
+      },
+      {
+        "title": "Korean BBQ",
+        "description": "Grilled marinated meats",
+        "image": "/images/korean-bbq.jpg"
+      },
+      {
+        "title": "Korean Dessert",
+        "description": "Sweet traditional treat",
+        "image": "/images/korean-dessert.jpg"
+      },
+      {
+        "title": "Steak Tartar",
+        "description": "Fresh seasoned beef",
+        "image": "/images/steak-tartar.jpg"
+      }
+    ]
+  },
+  "experience": {
+    "title": "The Obba Experience",
+    "subtitle": "Korean BBQ is more than a meal — it's an interactive dining ritual.",
+    "steps": [
+      {
+        "title": "Step 1",
+        "heading": "Select",
+        "description": "Choose from our premium cuts of marinated beef, pork, and chef combos.",
+        "icon": "Flame"
+      },
+      {
+        "title": "Step 2",
+        "heading": "Grill",
+        "description": "Cook it yourself on our traditional tabletop charcoal grills to your perfect doneness.",
+        "icon": "Beef"
+      },
+      {
+        "title": "Step 3",
+        "heading": "Enjoy",
+        "description": "Wrap in fresh lettuce with ssamjang, garlic, and our signature sides.",
+        "icon": "UtensilsCrossed"
       }
     ]
   }

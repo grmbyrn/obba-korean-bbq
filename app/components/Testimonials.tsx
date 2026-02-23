@@ -1,6 +1,7 @@
 "use client";
 import { useRef, useEffect } from "react";
 import { useTranslations } from "../lib/i18n";
+import { motion } from "framer-motion";
 
 type Testimonial = {
   name: string;
@@ -41,7 +42,12 @@ export default function Testimonials() {
   }, []);
 
   return (
-    <section className="w-full">
+    <motion.section
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      className="w-full"
+    >
       <h2 className="font-oswald text-4xl md:text-5xl font-bold uppercase tracking-tight text-foreground text-center mb-4">
         {t.testimonials.title}
       </h2>
@@ -88,6 +94,6 @@ export default function Testimonials() {
           })}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

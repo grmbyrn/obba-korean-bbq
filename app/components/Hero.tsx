@@ -1,7 +1,9 @@
 "use client";
+import { useTranslations } from "../lib/i18n";
 import { motion } from "framer-motion";
 
 const Hero = () => {
+  const t = useTranslations();
   return (
     <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
       {/* Background video */}
@@ -28,7 +30,7 @@ const Hero = () => {
           transition={{ duration: 0.6 }}
           className="font-inter text-sm uppercase tracking-[0.3em] text-primary mb-4"
         >
-          Barcelona&apos;s Finest
+          {t.hero.subtitle}
         </motion.p>
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
@@ -36,9 +38,7 @@ const Hero = () => {
           transition={{ duration: 0.7, delay: 0.15 }}
           className="font-oswald text-5xl md:text-7xl lg:text-8xl font-bold uppercase tracking-tight text-foreground leading-none drop-shadow-[0_4px_24px_rgba(0,0,0,0.7)]"
         >
-          Obba Korean
-          <br />
-          <span className="text-primary">BBQ</span>
+          {t.hero.title}
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -46,8 +46,7 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.35 }}
           className="font-inter mt-6 max-w-md mx-auto text-muted-foreground text-base md:text-lg"
         >
-          An authentic Korean barbecue experience — grill your own premium cuts
-          at your table.
+          {t.hero.description}
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -60,14 +59,14 @@ const Hero = () => {
             className="relative rounded-lg bg-primary/70 backdrop-blur-sm px-6 py-2 font-oswald text-sm font-semibold uppercase tracking-wider text-primary-foreground shadow-md border border-primary/20 transition-all duration-200 hover:scale-102 hover:bg-primary/80 hover:shadow-primary/20 hover:shadow-lg focus:outline-none focus:ring-1 focus:ring-primary/40"
             style={{ WebkitBackdropFilter: "blur(4px)" }}
           >
-            Book a Table
+            {t.hero.book}
           </a>
           <a
             href="#menu"
             className="relative rounded-lg bg-white/10 backdrop-blur-sm px-6 py-2 font-oswald text-sm font-semibold uppercase tracking-wider text-foreground shadow-md border border-white/20 transition-all duration-200 hover:scale-102 hover:bg-white/20 hover:text-primary hover:border-primary focus:outline-none focus:ring-1 focus:ring-primary/40"
             style={{ WebkitBackdropFilter: "blur(4px)" }}
           >
-            View Menu
+            {t.hero.menu}
           </a>
         </motion.div>
       </div>

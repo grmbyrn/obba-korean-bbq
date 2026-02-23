@@ -1,109 +1,30 @@
 "use client";
 import { useState } from "react";
+import { useTranslations } from "@/lib/i18n";
 import { motion, AnimatePresence } from "framer-motion";
 
-type MenuItem = {
-  name: string;
-  description: string;
-  price: string;
-  category: string;
-};
-
-const menuItems: MenuItem[] = [
-  {
-    name: "Chadol Baegi",
-    description: "Thinly sliced beef brisket, marbled and tender",
-    price: "€16",
-    category: "Beef",
-  },
-  {
-    name: "Galbi",
-    description: "Premium marinated short ribs, sweet soy glaze",
-    price: "€22",
-    category: "Beef",
-  },
-  {
-    name: "Bulgogi",
-    description: "Classic marinated beef, sesame and pear",
-    price: "€18",
-    category: "Beef",
-  },
-  {
-    name: "Wagyu Special",
-    description: "A5 Japanese wagyu, limited daily availability",
-    price: "€38",
-    category: "Beef",
-  },
-  {
-    name: "Samgyeopsal",
-    description: "Thick-cut pork belly, unseasoned perfection",
-    price: "€14",
-    category: "Pork",
-  },
-  {
-    name: "Dwaeji Bulgogi",
-    description: "Spicy marinated pork, gochujang glaze",
-    price: "€15",
-    category: "Pork",
-  },
-  {
-    name: "Moksal",
-    description: "Pork collar, well-marbled and juicy",
-    price: "€14",
-    category: "Pork",
-  },
-  {
-    name: "Obba Combo",
-    description: "Chef's selection of beef and pork for two",
-    price: "€42",
-    category: "Combos",
-  },
-  {
-    name: "Family Feast",
-    description: "Premium mix for 4 with all sides included",
-    price: "€78",
-    category: "Combos",
-  },
-  {
-    name: "Soju Classic",
-    description: "Korean rice spirit, original or flavored",
-    price: "€8",
-    category: "Drinks",
-  },
-  {
-    name: "Makgeolli",
-    description: "Traditional milky rice wine, slightly sweet",
-    price: "€7",
-    category: "Drinks",
-  },
-  {
-    name: "Korean Craft Beer",
-    description: "Rotating selection of Korean craft lagers",
-    price: "€6",
-    category: "Drinks",
-  },
-];
-
-const categories = ["All", "Beef", "Pork", "Combos", "Drinks"];
-
 const MenuSection = () => {
-  const [active, setActive] = useState("All");
+  const t = useTranslations();
+  const [active, setActive] = useState("all");
+  const menuSection = t.menuSection;
+  const items = menuSection?.items ? Object.values(menuSection.items) : [];
+  const categories = menuSection?.categories
+    ? Object.keys(menuSection.categories)
+    : [];
   const filtered =
-    active === "All"
-      ? menuItems
-      : menuItems.filter((i) => i.category === active);
+    active === "all" ? items : items.filter((i) => i.category === active);
 
   return (
     <section id="menu" className="py-24 px-6">
-      <div className="container mx-auto max-w-5xl">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="font-oswald text-4xl md:text-5xl font-bold uppercase tracking-tight text-center text-foreground"
-        >
-          Our <span className="text-primary">Menu</span>
-        </motion.h2>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="container mx-auto max-w-5xl"
+      >
+        <h2 className="font-oswald text-4xl md:text-5xl font-bold uppercase tracking-tight text-center text-foreground">
+          {menuSection?.title || "Our Menu"}
+        </h2>
 
         {/* Filter Bar */}
         <div className="mt-10 flex flex-wrap justify-center gap-2">
@@ -117,7 +38,8 @@ const MenuSection = () => {
                   : "bg-secondary text-muted-foreground hover:text-foreground"
               }`}
             >
-              {cat}
+              {(menuSection?.categories as Record<string, string>)?.[cat] ||
+                cat}
             </button>
           ))}
         </div>
@@ -153,7 +75,7 @@ const MenuSection = () => {
             ))}
           </AnimatePresence>
         </motion.div>
-      </div>
+      </motion.div>
     </section>
   );
 };

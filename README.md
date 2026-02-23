@@ -1,4 +1,3 @@
-
 # Obba Korean BBQ – Restaurant Website
 
 A modern, visually rich, and fully responsive restaurant website for Obba Korean BBQ, built with Next.js, React, and Tailwind CSS. This project demonstrates advanced UI/UX, accessibility, and real-world business logic for a premium dining experience.
@@ -30,17 +29,19 @@ A modern, visually rich, and fully responsive restaurant website for Obba Korean
 ## Getting Started
 
 1. **Install dependencies:**
-	```bash
-	npm install
-	```
+
+   ```bash
+   npm install
+   ```
 
 2. **Run the development server:**
-	```bash
-	npm run dev
-	```
+
+   ```bash
+   npm run dev
+   ```
 
 3. **Open your browser:**
-	Visit [http://localhost:3000](http://localhost:3000) to view the site.
+   Visit [http://localhost:3000](http://localhost:3000) to view the site.
 
 ## Project Structure
 

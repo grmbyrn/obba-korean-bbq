@@ -2,12 +2,16 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu } from "lucide-react";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetTitle,
+} from "@/components/ui/sheet";
 
 const navLinks = [
   { label: "Menu", href: "#menu" },
   { label: "Experience", href: "#experience" },
-  { label: "Reservations", href: "#booking" },
   { label: "Location", href: "#location" },
 ];
 
@@ -70,6 +74,7 @@ const Navbar = () => {
             side="right"
             className="bg-background border-border w-72"
           >
+            <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
             <div className="flex flex-col gap-6 pt-12">
               {navLinks.map((link) => (
                 <a
@@ -84,7 +89,7 @@ const Navbar = () => {
               <a
                 href="#booking"
                 onClick={() => setOpen(false)}
-                className="mt-4 rounded-sm bg-primary px-5 py-3 text-center font-oswald text-sm font-semibold uppercase tracking-wider text-primary-foreground whitespace-nowrap"
+                className="font-oswald text-xl uppercase tracking-wider text-foreground hover:text-primary transition-colors"
               >
                 Book a Table
               </a>
