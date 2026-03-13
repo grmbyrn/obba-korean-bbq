@@ -74,13 +74,16 @@ Open http://localhost:3000. The project uses the Next.js app router — changes 
 
 ---
 
-If you'd like, I can:
+## Contributing
 
-- add a small server API route to fetch and cache Google reviews,
-- wire a `Reviews` component with a graceful hardcoded fallback, or
-- add tests and CI workflow for deployment quality gates.
+Contributions are welcome. To propose a feature or report a bug, please open an issue with a clear title and reproduction steps. For code changes, follow this process:
 
-Contact: project maintained in this repository.
+- Fork the repository and create a feature branch from `main`.
+- Open a pull request with a descriptive title and link to any related issue.
+- Ensure code follows the existing style (TypeScript, Tailwind, Prettier) and run `npm run lint` locally.
+- Include tests for new behavior where practical and keep changes focused.
+
+If you'd like to discuss a large change, open an issue first to align on scope and approach. See `CONTRIBUTING.md` for more detail if present.
 
 # Obba Korean BBQ – Restaurant Website
 
