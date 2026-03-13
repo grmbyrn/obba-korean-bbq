@@ -10,14 +10,28 @@
     "title": "What Our Customers Say",
     "reviews": [
       {
-        "name": "Jinwoo Park",
-        "location": "Seoul, South Korea",
-        "text": "A must-visit spot in town. The ambiance and food are top-notch!"
+        "name": "Yan",
+        "text": "Now this is authentic koreanfood. Ordered pork and chadol set and japchae and we loved everything. We're excited to come back and try the rest of the menu. Service is 💯 too!"
       },
       {
-        "name": "Maria Lopez",
-        "location": "Barcelona, Spain",
-        "text": "Loved the variety on the menu. Will definitely come back with friends!"
+        "name": "Clément B.",
+        "text": "OBBA Corea BBQ is the real deal, just like in Seoul. Fresh food, excellent quality, and the staff even cook for you like in the high-end BBQ spots in Korea. Service is great, and best of all, you don’t leave smelling like smoke thanks to their top-notch ventilation system."
+      },
+      {
+        "name": "Emily M.",
+        "text": "I can't say enough good things about this restaurant. The Korean BBQ is on point and delicious and the staff is super friendly. My favorites here are the Galbi, spicy bulgogi, tteok-bokki and japchae.Definitely a great restaurant, reservations recommended."
+      },
+      {
+        "name": "Jin M.",
+        "text": "I've repeated and brought many of my friends over to this restaurant, its amazingly good! The food is very authentic, the banchan are seasonal in true korean fashion and the cuts of meat for the bbq are always on point."
+      },
+      {
+        "name": "Roberto P.",
+        "text": "This hidden gem offers delicious Korean food. I found it perfect to go to eat with your couple or in small or large groups of friends. I loved the interior decoration, which is dimly lit and quite comfortable, cozy and elegant."
+      },
+      {
+        "name": "Emily C.",
+        "text": "Authentic Korean barbeque run by a Korean owner. They serve excellent quality of meat and vegetables, juicy and fresh. The 2-people beef set  is extremely good for value! Must visit to satisfy an Asian appetite."
       }
     ]
   },

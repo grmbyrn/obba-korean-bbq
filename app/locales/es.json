@@ -10,14 +10,28 @@
     "title": "Lo que dicen nuestros clientes",
     "reviews": [
       {
-        "name": "Jinwoo Park",
-        "location": "Seúl, Corea del Sur",
-        "text": "Un lugar imprescindible en la ciudad. ¡El ambiente y la comida son de primera!"
+        "name": "Yan",
+        "text": "Ahora esto es comida coreana auténtica. Pedimos el set de cerdo y chadol y japchae y nos encantó todo. Estamos emocionados de volver y probar el resto del menú. ¡El servicio también es excelente!"
       },
       {
-        "name": "Maria Lopez",
-        "location": "Barcelona, España",
-        "text": "Me encantó la variedad del menú. ¡Definitivamente volveré con amigos!"
+        "name": "Clément B.",
+        "text": "OBBA Korea BBQ es de verdad, como en Seúl. Comida fresca, calidad excelente, y el personal incluso cocina por ti como en los locales de alta gama en Corea. El servicio es estupendo y, lo mejor, no te vas oliendo a humo gracias a su sistema de ventilación de primera."
+      },
+      {
+        "name": "Emily M.",
+        "text": "No puedo decir suficientes cosas buenas sobre este restaurante. La barbacoa coreana está en su punto y es deliciosa, y el personal es muy amable. Mis favoritos aquí son el Galbi, el bulgogi picante, el tteok-bokki y el japchae. Definitivamente un gran restaurante, se recomiendan reservas."
+      },
+      {
+        "name": "Jin M.",
+        "text": "He vuelto varias veces y he traído a muchos amigos a este restaurante, ¡es increíblemente bueno! La comida es muy auténtica, los banchan son de temporada en la verdadera tradición coreana y los cortes de carne para la barbacoa siempre son perfectos. El equipo en las mesas es muy amable y atento al gestionar la parrilla, por lo que la experiencia es muy relajada y agradable."
+      },
+      {
+        "name": "Roberto P.",
+        "text": "Esta joya escondida ofrece deliciosa comida coreana. Me pareció perfecto para ir en pareja o en grupos pequeños o grandes de amigos. Me encantó la decoración interior, que está tenuemente iluminada y es bastante cómoda, acogedora y elegante."
+      },
+      {
+        "name": "Emily C.",
+        "text": "Barbacoa coreana auténtica dirigida por un propietario coreano. Sirven carne y verduras de excelente calidad, jugosas y frescas. ¡El set de ternera para 2 personas es una opción con una relación calidad-precio excelente! Imprescindible para saciar un antojo asiático."
       }
     ]
   },

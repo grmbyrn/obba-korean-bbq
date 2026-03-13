@@ -5,11 +5,12 @@ import { motion } from "framer-motion";
 const Hero = () => {
   const t = useTranslations();
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden">
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden" style={{ minHeight: '100vh' }}>
       {/* Background video */}
       <video
         className="absolute inset-0 w-full h-full object-cover z-0"
         src="/videos/korean-bbq-bg.mp4"
+        poster="/images/hero-poster.jpg"
         autoPlay
         loop
         muted
@@ -36,7 +37,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.15 }}
-          className="font-oswald text-5xl md:text-7xl lg:text-8xl font-bold uppercase tracking-tight text-foreground leading-none drop-shadow-[0_4px_24px_rgba(0,0,0,0.7)]"
+          className="font-oswald text-5xl md:text-7xl lg:text-8xl font-bold uppercase tracking-tight text-foreground leading-none drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]"
         >
           {t.hero.title}
         </motion.h1>
